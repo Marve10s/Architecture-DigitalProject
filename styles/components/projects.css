@@ -1,0 +1,115 @@
+.our-project__title {
+    color: var(--clr-gray-light1);
+    text-transform: capitalize;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.projects-wrapper {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: minmax(270px, auto);
+    gap: 1rem;
+}
+
+.projects-wrapper div img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+/* 
+.project-img1 img {
+    filter: grayscale(100);
+} */
+
+
+.project-img1 {
+    position: relative;
+    grid-area: pr1;
+}
+
+.project-img2 {
+    grid-area: pr2;
+}
+
+.project-img3 {
+    grid-area: pr3;
+}
+
+.project-img4 {
+    grid-area: pr4;
+}
+
+.project-img5 {
+    grid-area: pr5;
+}
+
+.projects-wrapper {
+    grid-template-areas:
+        "pr1 pr1 pr1 pr1 pr2 pr2 pr2 pr2 "
+        "pr3 pr3 pr4 pr4 pr4 pr4 pr5 pr5 ";
+}
+
+.project1-text h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 64px;
+    max-width: 5ch;
+    color: #ffffff;
+    margin: 4rem 4rem 0;
+    position: absolute;
+    top: 0;
+}
+
+.project1-text button {
+    font-size: .75rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 0 4rem;
+    color: #ffffff;
+    position: absolute;
+    left: 4px;
+    bottom: 100px;
+}
+
+.project1-btn {
+    font-family: 'Gothic A1', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project1-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #333333;
+    opacity: .75;
+}
+
+.all-projects__btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+
+.all-projects__btn button {
+    color: #ffffff;
+    background-color: var(--clr-gray-dark1);
+}
+
+.all-projects__btn svg {
+    width: 24px;
+    height: 24px;
+}
