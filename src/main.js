@@ -6,5 +6,6 @@ import "../styles/components/about.css";
 import "../styles/components/main-focus.css";
 import "../styles/components/projects.css";
 import "../styles/components/contactUs.css";
+import "../styles/components/footer.css";
 
 import "../styles/utility.css";
