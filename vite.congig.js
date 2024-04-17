@@ -6,8 +6,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(root, "index.html"),
-        nested: resolve(rooy, "gallery.html"),
+        main: resolve(__dirname, "index.html"),
+        gallery: resolve(__dirname, "Pages/gallery.html"),
       },
     },
   },
