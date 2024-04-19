@@ -10,7 +10,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400&family=Roboto:wght@100;300;400;500&display=swap"
     rel="stylesheet">
-  <script type="module" src="src/main.js"></script>
+  <script type="module" src="src/styles.js"></script>
+  <script type="module" src="src/controller.js"></script>
   <title>Architecture</title>
 </head>
 
@@ -23,17 +24,17 @@
       </div>
       <nav class="nav">
         <ul class="list">
-          <li class="list-element"><a href="index.html">Main</a></li>
-          <li class="list-element"><a href="/gallery/gallery.html">Gallery</a></li>
-          <li class="list-element"><a href="">Projects</a></li>
-          <li class="list-element"><a href="">Certification</a></li>
-          <li class="list-element"><a href="">Contacts</a></li>
+          <li class="list-element">Main</li>
+          <li class="list-element" id="gallery-link">Gallery</li>
+          <li class="list-element">Projects</li>
+          <li class="list-element">Certification</li>
+          <li class="list-element">Contacts</li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <!-- START HERO  SECTION -->
     <section class="hero container section">
       <div class="hero-title">

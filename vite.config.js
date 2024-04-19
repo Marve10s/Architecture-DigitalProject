@@ -6,8 +6,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
+        // Define unique keys for each input entry point
         main: resolve(__dirname, "index.html"),
-        nested: resolve(__dirname, "gallery/gallery.html"),
+        gallery: resolve(__dirname, "gallery/gallery.html"),
       },
     },
   },

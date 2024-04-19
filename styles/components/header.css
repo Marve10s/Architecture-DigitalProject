@@ -30,16 +30,13 @@
 }
 
 .list-element {
+    cursor: pointer;
     font-size: 0.75rem;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2.4px;
 }
 
-.list-element>a {
-    color: inherit;
-    text-decoration: none;
-}
 
 .list-element:first-child {
     cursor: pointer;
