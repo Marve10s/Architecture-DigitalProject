@@ -56,3 +56,22 @@
     font-weight: 300;
     line-height: 25px;
 }
+
+/* ABOUT VIEW */
+
+.aboutView-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 61px;
+}
+
+.aboutView-title {
+    margin-bottom: 61px;
+}
+
+.aboutView-wrapper img {
+    width: 210px;
+    height: 260px;
+}

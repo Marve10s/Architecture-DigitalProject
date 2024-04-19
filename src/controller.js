@@ -1,10 +1,17 @@
 import aboutView from "./Views/aboutView";
+import mainView from "./Views/mainView";
 import render from "./Views/render";
 
 const main = document.getElementById("main");
-const gallery = document.getElementById("gallery-link");
+const mainLink = document.getElementById("main-link");
+const galleryLink = document.getElementById("gallery-link");
 
-gallery.addEventListener("click", function () {
+mainLink.addEventListener("click", function () {
+  const markup = mainView.generateMarkup();
+  render(main, markup);
+});
+
+galleryLink.addEventListener("click", function () {
   const markup = aboutView.generateMarkup();
   render(main, markup);
 });
