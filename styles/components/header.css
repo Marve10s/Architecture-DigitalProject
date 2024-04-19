@@ -38,12 +38,12 @@
 }
 
 
-.list-element:first-child {
+.active-link {
     cursor: pointer;
     position: relative;
 }
 
-.list-element:first-child:after {
+.active-link::after {
     content: '';
     position: absolute;
     top: -5px;

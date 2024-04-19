@@ -8,7 +8,6 @@ export default defineConfig({
       input: {
         // Define unique keys for each input entry point
         main: resolve(__dirname, "index.html"),
-        gallery: resolve(__dirname, "gallery/gallery.html"),
       },
     },
   },
