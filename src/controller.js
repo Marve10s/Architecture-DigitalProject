@@ -1,5 +1,6 @@
 import aboutView from "./Views/aboutView";
 import mainView from "./Views/mainView";
+import projectsView from "./Views/projectsView";
 import render from "./Views/render";
 
 const main = document.getElementById("main");
@@ -18,7 +19,6 @@ galleryLink.addEventListener("click", function () {
 });
 
 projectLink.addEventListener("click", function () {
-  // const markup = mainView.generateMarkup();
-  // render(main, markup);
-  console.log(projectLink);
+  const markup = projectsView.generateMarkup();
+  render(main, markup);
 });
