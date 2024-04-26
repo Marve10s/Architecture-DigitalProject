@@ -6,16 +6,16 @@ function generateMarkup() {
     <strong>Gallery</strong>
   </h1>
   <div class="aboutView-wrapper">
-    <img src="https://architecture-digital.netlify.app/public/photoGallery/gallery-1.jpg" alt="gallery-1" />
-    <img src="/public/about-1.png" alt="" />
-    <img src="/public/about-1.png" alt="" />
-    <img src="/public/about-1.png" alt="" />
-    <img src="/public/about-1.png" alt="" />
-    <img src="/public/about-1.png" alt="" />
-    <img src="/public/about-1.png" alt="" />
-    <img src="/public/about-1.png" alt="" />
-    <img src="/public/about-1.png" alt="" />
-    <img src="/public/about-1.png" alt="" />
+    <img src="/photoGallery/gallery-1.jpg" alt="gallery-1" />
+    <img src="about-1.png" alt="" />
+    <img src="about-1.png" alt="" />
+    <img src="about-1.png" alt="" />
+    <img src="about-1.png" alt="" />
+    <img src="about-1.png" alt="" />
+    <img src="about-1.png" alt="" />
+    <img src="about-1.png" alt="" />
+    <img src="about-1.png" alt="" />
+    <img src="about-1.png" alt="" />
   </div>
 </section>
     `;
