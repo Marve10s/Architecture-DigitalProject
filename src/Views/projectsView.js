@@ -8,7 +8,7 @@ function generateMarkup() {
     <div class="projectView-wrapper">
       <div class="projectView-block">
         <div class="projectView-img">
-          <img src="public/about-1.png" alt="" />
+        <img src="/photoGallery/gallery-1.jpg" alt="gallery" />
         </div>
         <div class="projectView-description">
           <h2 class="projectView-title">Sample project 1</h2>
@@ -40,7 +40,7 @@ function generateMarkup() {
 
       <div class="projectView-block">
         <div class="projectView-img">
-          <img src="public/about-1.png" alt="" />
+        <img src="/photoGallery/gallery-2.jpg" alt="gallery" />
         </div>
         <div class="projectView-description">
           <h2 class="projectView-title">Sample project 2</h2>
@@ -72,7 +72,7 @@ function generateMarkup() {
 
       <div class="projectView-block">
         <div class="projectView-img">
-          <img src="public/about-1.png" alt="" />
+        <img src="/photoGallery/gallery-3.jpg" alt="gallery" />
         </div>
         <div class="projectView-description">
           <h2 class="projectView-title">Sample project 3</h2>
