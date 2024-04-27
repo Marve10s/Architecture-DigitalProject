@@ -8,7 +8,7 @@
 }
 
 .logo {
-  width: 70px;
+  width: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +18,7 @@
 .logo-name {
   font-family: "Honk", system-ui;
   text-transform: uppercase;
-  font-size: 0.45rem;
+  font-size: 0.6rem;
   text-wrap: wrap;
   font-weight: bold;
 }

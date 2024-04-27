@@ -1,31 +1,34 @@
-import aboutView from "./Views/galleryView";
 import mainView from "./Views/mainView";
 import projectsView from "./Views/projectsView";
 import contactUsView from "./Views/contactUsView";
 import render from "./Views/render";
+import galleryView from "./Views/galleryView";
 
 const main = document.getElementById("main");
-const mainLink = document.getElementById("main-link");
-const galleryLink = document.getElementById("gallery-link");
-const projectLink = document.getElementById("projects-link");
-const contactLink = document.getElementById("contact-link");
+const mainLinks = [...document.querySelectorAll(".main-link_href")];
+const galleryLink = [...document.querySelectorAll(".gallery-link_href")];
+const projectLink = [...document.querySelectorAll(".project-link_href")];
+const contactLink = [...document.querySelectorAll(".contact-link_href")];
 
-mainLink.addEventListener("click", function () {
-  const markup = mainView.generateMarkup();
-  render(main, markup);
+function viewGenerator(view) {
+  return function () {
+    const markup = view.generateMarkup();
+    render(main, markup);
+  };
+}
+
+mainLinks.forEach((link) => {
+  link.addEventListener("click", viewGenerator(mainView));
 });
 
-galleryLink.addEventListener("click", function () {
-  const markup = aboutView.generateMarkup();
-  render(main, markup);
+galleryLink.forEach((link) => {
+  link.addEventListener("click", viewGenerator(galleryView));
 });
 
-projectLink.addEventListener("click", function () {
-  const markup = projectsView.generateMarkup();
-  render(main, markup);
+projectLink.forEach((link) => {
+  link.addEventListener("click", viewGenerator(projectsView));
 });
 
-contactLink.addEventListener("click", function () {
-  const markup = contactUsView.generateMarkup();
-  render(main, markup);
+contactLink.forEach((link) => {
+  link.addEventListener("click", viewGenerator(contactUsView));
 });

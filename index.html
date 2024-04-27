@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400&family=Roboto:wght@100;300;400;500&display=swap"
       rel="stylesheet"
     />
-    <script type="module" src="src/styles.js"></script>
+    <script type="module" src="src/main.js"></script>
     <script type="module" src="src/controller.js"></script>
     <title>Architecture</title>
   </head>
@@ -18,30 +19,30 @@
     <header class="container">
       <div class="header">
         <div class="logo">
-          <img src="//logo.png" alt="" />
           <span class="logo-name">digital project</span>
         </div>
         <nav class="nav">
           <ul class="list">
-            <li class="list-element active-link" id="main-link">Main</li>
-            <li class="list-element" id="gallery-link">Gallery</li>
-            <li class="list-element" id="projects-link">Projects</li>
-            <li class="list-element" id="contact-link">Contacts</li>
+            <li class="list-element active-link main-link_href">Main</li>
+            <li class="list-element gallery-link_href">Gallery</li>
+            <li class="list-element project-link_href">Projects</li>
+            <li class="list-element contact-link_href">Contacts</li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main id="main">
-      <!-- START HERO  SECTION -->
+      <!-- START HERO SECTION -->
       <section class="hero container section">
         <div class="hero-title">
           <h1 class="title">
             Project <br />
             <strong>Lorum</strong>
           </h1>
-          <div class="arrow-btns">
-            <button class="arrow-btn-left">
+
+          <!--  <div class="arrow-btns">
+            <button class="arrow-btn-left prevButton">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -57,8 +58,7 @@
                 />
               </svg>
             </button>
-            <!-- ARROW BTNS -->
-            <button class="arrow-btn-right active-btn">
+            <button class="arrow-btn-right active-btn nextButton">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -76,17 +76,16 @@
             </button>
             <div class="line"></div>
           </div>
-          <!-- COUNTER -->
           <div class="hero-counter">
             <span class="counter-current"
-              >0 <span class="counter-slach">/</span>
-              <span class="counter-project"> 02</span><br />1</span
+              >0 <span class="counter-slash">/</span>
+              <span class="counter-total">02</span><br />1</span
             >
-          </div>
+          </div>-->
         </div>
         <!-- IMAGE  -->
         <div class="hero-img">
-          <img src="/about-1.png" alt="Home image" />
+          <img src="/about-1.png" alt="Home image" loading="lazy" />
           <div class="btn-container">
             <button class="btn project-btn">
               View project
@@ -94,29 +93,68 @@
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                strokewidth="{1.5}"
+                stroke-width="1.5"
                 stroke="currentColor"
-                classname="w-6 h-6"
+                class="w-6 h-6"
               >
                 <path
-                  strokelinecap="round"
-                  strokelinejoin="round"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                   d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
                 />
               </svg>
             </button>
           </div>
         </div>
+
+        <!-- <div class="hero-img">
+          <img src="/second-slide.jpg" alt="Home image" loading="lazy" />
+          <div class="btn-container">
+            <button class="btn project-btn">
+              View project
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div> -->
       </section>
+
       <!-- END OF HERO  -->
 
       <!-- START ABOUT SECTION -->
       <section class="about container section">
         <div class="about-wrapper">
           <div class="about-imgs">
-            <img class="about-img-1" src="/hero-1.png" alt="home-1" />
-            <img class="about-img-2" src="/hero-2.png" alt="home-2" />
-            <img class="about-img-3" src="/hero-3.png" alt="home-3" />
+            <img
+              class="about-img-1"
+              src="/hero-1.png"
+              alt="home-1"
+              loading="lazy"
+            />
+            <img
+              class="about-img-2"
+              src="/hero-2.png"
+              alt="home-2"
+              loading="lazy"
+            />
+            <img
+              class="about-img-3"
+              src="/hero-3.png"
+              alt="home-3"
+              loading="lazy"
+            />
           </div>
           <div class="about-info">
             <h2 class="about-title">About</h2>
@@ -188,7 +226,7 @@
         <div class="projects-wrapper">
           <div class="project-img1">
             <div class="overlay"></div>
-            <img src="/project-1.jpeg" alt="project-1" />
+            <img src="/project-1.jpeg" alt="project-1" loading="lazy" />
             <div class="project1-text">
               <h2 class="project1-title">Sample Project</h2>
               <div class="">
@@ -214,19 +252,19 @@
           </div>
 
           <div class="project-img2">
-            <img src="/project-2.png" alt="project-2" />
+            <img src="/project-2.png" alt="project-2" loading="lazy" />
           </div>
 
           <div class="project-img3">
-            <img src="/project-3.png" alt="project-3" />
+            <img src="/project-3.png" alt="project-3" loading="lazy" />
           </div>
 
           <div class="project-img4">
-            <img src="/project-4.png" alt="project-4" />
+            <img src="/project-4.png" alt="project-4" loading="lazy" />
           </div>
 
           <div class="project-img5">
-            <img src="/project-5.png" alt="project-5" />
+            <img src="/project-5.png" alt="project-5" loading="lazy" />
           </div>
         </div>
         <div class="all-projects__btn">
@@ -291,7 +329,13 @@
               required
             ></textarea>
           </form>
-          <img class="contact-us_img" src="public/contactUs.jpg" alt="" />
+
+          <img
+            class="contact-us_img"
+            src="/contactUs.jpg"
+            alt="contact-picture"
+            loading="lazy"
+          />
         </div>
 
         <button class="btn contact-us_btn" type="submit">
@@ -320,18 +364,17 @@
       <div class="footer-container">
         <!-- LOGO -->
         <div>
-          <img src="/public/logo-light.svg" alt="Logo" />
+          <img src="logo.png" alt="Logo" />
         </div>
         <!-- INFORMATION -->
         <div class="information-container">
           <h3 class="footer-title">Information</h3>
 
           <div class="footer-pages">
-            <a href="#">Main</a>
-            <a href="#">Gallery</a>
-            <a href="#">Projects</a>
-            <a href="#">Certifications</a>
-            <a href="#">Contacts</a>
+            <a class="main-link_href" href="#">Main</a>
+            <a class="gallery-link_href" href="#">Gallery</a>
+            <a class="project" href="#">Projects</a>
+            <a class="contact-link_href" href="#">Contacts</a>
           </div>
         </div>
 
